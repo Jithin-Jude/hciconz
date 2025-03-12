@@ -1,0 +1,72 @@
+[versions]
+agp = "8.8.0"
+datastorePreferences = "1.1.1"
+firebaseAds = "23.4.0"
+firebaseBom = "33.4.0"
+gson = "2.10.1"
+kotlin = "1.9.23"
+crashlyticsVersion = "3.0.2"
+googleServicesVersion = "4.4.2"
+coreKtx = "1.13.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+lifecycleRuntimeKtx = "2.8.6"
+activityCompose = "1.9.3"
+composeBom = "2024.04.01"
+material = "1.12.0"
+navigationCompose = "2.8.3"
+koin = "3.3.2"
+koin_android = "3.5.0"
+purchases = "7.1.0"
+startup = "1.2.0"
+lifecycleViewmodelCompose = "2.7.0"
+roomCompiler = "2.6.1"
+roomKtx = "2.6.1"
+roomRuntime = "2.6.1"
+appcompat = "1.6.1"
+uiAndroid = "1.7.8"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-datastore-core = { module = "androidx.datastore:datastore-core", version.ref = "datastorePreferences" }
+androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastorePreferences" }
+androidx-runtime-livedata = { module = "androidx.compose.runtime:runtime-livedata" }
+firebase-ads = { module = "com.google.firebase:firebase-ads", version.ref = "firebaseAds" }
+firebase-analytics = { module = "com.google.firebase:firebase-analytics" }
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+firebase-crashlytics = { module = "com.google.firebase:firebase-crashlytics" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
+koin-core = { group = "io.insert-koin", name = "koin-core", version.ref = "koin" }
+koin-android = { group = "io.insert-koin", name = "koin-android", version.ref = "koin_android" }
+material = { module = "com.google.android.material:material", version.ref = "material" }
+purchases = { module = "com.revenuecat.purchases:purchases", version.ref = "purchases" }
+startup-runtime = { group = "androidx.startup", name = "startup-runtime", version.ref = "startup" }
+androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycleViewmodelCompose" }
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomCompiler" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomKtx" }
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomRuntime" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+androidx-ui-android = { group = "androidx.compose.ui", name = "ui-android", version.ref = "uiAndroid" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+google-firebase-crashlytics = { id = "com.google.firebase.crashlytics", version.ref = "crashlyticsVersion" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleServicesVersion" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+
