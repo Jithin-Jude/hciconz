@@ -2150,14 +2150,7 @@ object HCIconUtils {
                     R.drawable.hc_ic_earth
                 ),
                 hcIcGlobe,
-                HCImageVector(
-                    "twitter_x",
-                    "Twitter X",
-                    "Social,Media,Platform,Tweet,Chat",
-                    "social",
-                    "Social",
-                    R.drawable.hc_ic_twitter_x
-                ),
+                hcIcTwitterX,
                 HCImageVector(
                     "twitter",
                     "Twitter",
@@ -2301,6 +2294,14 @@ object HCIconUtils {
         categoryId = "habit_card",
         categoryName = "Habit Card",
         iconRes = R.drawable.hc_ic_plus
+    )
+    val hcIcTwitterX: HCImageVector = HCImageVector(
+        "twitter_x",
+        "Twitter X",
+        "Social,Media,Platform,Tweet,Chat",
+        "social",
+        "Social",
+        R.drawable.hc_ic_twitter_x
     )
 
     val hcIcInstagram: HCImageVector = HCImageVector(
