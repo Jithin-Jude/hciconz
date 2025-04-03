@@ -2170,6 +2170,7 @@ object HCIconUtils {
                     R.drawable.hc_ic_circle_fading_arrow_up
                 ),
                 hcIcInstagram,
+                hcIcPinterest,
                 HCImageVector(
                     "facebook",
                     "Facebook",
@@ -2311,6 +2312,15 @@ object HCIconUtils {
         "social",
         "Social",
         R.drawable.hc_ic_instagram
+    )
+
+    val hcIcPinterest: HCImageVector = HCImageVector(
+        "pinterest",
+        "Pinterest",
+        "Social,Media,Platform,Photos,Share",
+        "social",
+        "Social",
+        R.drawable.hc_ic_pinterest
     )
 
     val hcIcReddit: HCImageVector = HCImageVector(
