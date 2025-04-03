@@ -28,7 +28,7 @@ add inside `settings.gradle.kts`
 add inside `build.gradle.kts` [app level]
 ```
 	dependencies {
-	        implementation("com.github.Jithin-Jude:hciconz:1.0.0")
+	        implementation("com.github.Jithin-Jude:hciconz:<latest_version>")
 	}
 ```
 ```
