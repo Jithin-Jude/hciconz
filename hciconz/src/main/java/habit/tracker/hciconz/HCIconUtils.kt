@@ -2149,14 +2149,7 @@ object HCIconUtils {
                     "Social",
                     R.drawable.hc_ic_earth
                 ),
-                HCImageVector(
-                    "globe",
-                    "Globe",
-                    "World,Planet,Map,Global,Travel",
-                    "social",
-                    "Social",
-                    R.drawable.hc_ic_globe
-                ),
+                hcIcGlobe,
                 HCImageVector(
                     "twitter_x",
                     "Twitter X",
@@ -2173,14 +2166,8 @@ object HCIconUtils {
                     "Social",
                     R.drawable.hc_ic_twitter
                 ),
-                HCImageVector(
-                    "bluesky",
-                    "Bluesky",
-                    "Social,Media,Platform,Chat,Network",
-                    "social",
-                    "Social",
-                    R.drawable.hc_ic_bluesky
-                ),
+                hcIcBluesky,
+                hcIcReddit,
                 HCImageVector(
                     "circle_fading_arrow_up",
                     "Circle Fading Arrow Up",
@@ -2189,14 +2176,7 @@ object HCIconUtils {
                     "Social",
                     R.drawable.hc_ic_circle_fading_arrow_up
                 ),
-                HCImageVector(
-                    "instagram",
-                    "Instagram",
-                    "Social,Media,Platform,Photos,Share",
-                    "social",
-                    "Social",
-                    R.drawable.hc_ic_instagram
-                ),
+                hcIcInstagram,
                 HCImageVector(
                     "facebook",
                     "Facebook",
@@ -2311,6 +2291,9 @@ object HCIconUtils {
         iconsByCategory.values.flatten()
     }
 
+    fun getIconsByCategory(category: IconCategory): List<HCImageVector> =
+        iconsByCategory[category] ?: emptyList()
+
     val hcIcPlus: HCImageVector = HCImageVector(
         id = "plus",
         name = "Plus",
@@ -2320,6 +2303,39 @@ object HCIconUtils {
         iconRes = R.drawable.hc_ic_plus
     )
 
-    fun getIconsByCategory(category: IconCategory): List<HCImageVector> =
-        iconsByCategory[category] ?: emptyList()
+    val hcIcInstagram: HCImageVector = HCImageVector(
+        "instagram",
+        "Instagram",
+        "Social,Media,Platform,Photos,Share",
+        "social",
+        "Social",
+        R.drawable.hc_ic_instagram
+    )
+
+    val hcIcReddit: HCImageVector = HCImageVector(
+        "reddit",
+        "Reddit",
+        "Social,Media,Platform,Photos,Share",
+        "social",
+        "Social",
+        R.drawable.hc_ic_reddit
+    )
+
+    val hcIcBluesky: HCImageVector = HCImageVector(
+        "bluesky",
+        "Bluesky",
+        "Social,Media,Platform,Chat,Network",
+        "social",
+        "Social",
+        R.drawable.hc_ic_bluesky
+    )
+
+    val hcIcGlobe: HCImageVector = HCImageVector(
+        "globe",
+        "Globe",
+        "World,Planet,Map,Global,Travel",
+        "social",
+        "Social",
+        R.drawable.hc_ic_globe
+    )
 }
